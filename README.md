@@ -19,6 +19,16 @@ This is a command-line application to manage a company's employee database, usin
 ```
 npm install
 ```
+- Run the following SQL Commands:
+```
+mysql -u root -p
+```
+```
+SOURCE schema.sql;
+```
+```
+SOURCE seeds.sql;
+```
 
 ## Usage
 - Run `node index.js` to start application
