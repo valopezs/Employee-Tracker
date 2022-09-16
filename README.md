@@ -34,7 +34,9 @@ SOURCE seeds.sql;
 - Run `node index.js` to start application
 - Use inquirer from your command line to answer questions about company's database
 
-View walk through video here - [Sample Video Link]()
+View walk through video here - [Sample Video Link](https://drive.google.com/drive/folders/1dwACIsQXVymUKBI-Zr1fMoNgRv70OFK3?usp=sharing)
+
+https://user-images.githubusercontent.com/107379025/190547154-2535a6d4-fc58-42ea-8024-604621b9baaf.mp4
 
 ## Contributing 
 Contributors should read the installation section. 
