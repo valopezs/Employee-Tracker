@@ -74,7 +74,7 @@ const viewRole = () => {
         AS department, roles.salary
         FROM roles
         INNER JOIN departments
-        ON roles.dept_id = department.dept_id;`,
+        ON roles.dept_id = departments.dept_id;`,
         (err, data) => {
             if (err) throw err;
             console.table (data);
@@ -84,8 +84,8 @@ const viewRole = () => {
 
 // View all employees selection
 const viewEmployee = () => {
-    db.query(` SELECT employees.emploee_id, employees.first_name, employees.last_name, roles.title, departments.name
-        AS department, roles.salary, CONCAT(managers.first_name, " " managers.last_name) AS manager
+    db.query(`SELECT employees.employee_id, employees.first_name, employees.last_name, roles.title, departments.name
+        AS department, roles.salary, CONCAT(managers.first_name, " ", managers.last_name) AS manager
         FROM roles
         INNER JOIN employees
         ON roles.role_id = employees.role_id
