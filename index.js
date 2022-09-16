@@ -156,14 +156,14 @@ const addRole = () => {
           .then((answer) => {
             db.query(
                 `INSERT INTO roles (title, salary, dept_id)
-                VALUES (" ${answer.title}", "${answer.salary}"), "${
+                VALUES ("${answer.title}", "${answer.salary}", "${
                     deptArray.indexOf(answer.department) + 1
                 }");`,
                 (err, data) => {
                     if (err) throw err;
                 }
             );
-            console.log("Added", `${answer.title}`, "to the database");
+            console.log("Added", `${answer.title}`, "to the database!");
             purpose();
           });
     });
@@ -236,7 +236,8 @@ const addEmployee = () => {
              VALUES ("${answer.firstName}", "${answer.lastName}", ${roleId}, ${managerId});`,
 
             (err, data) => {
-                if (err) throw err;}
+                if (err) throw err;
+            }
         );
         console.log(
             "Added",
