@@ -209,7 +209,7 @@ const addEmployee = () => {
             message: "What is the employee's last name?",
         },
         {
-            type: "input",
+            type: "list",
             name: "title",
             message: "What is the employee's role?",
             choices: roleArray,
