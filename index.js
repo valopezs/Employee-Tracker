@@ -18,7 +18,6 @@ db.connect((err) => {
 });
 
 // Start application
-
 const purpose = () => {
     return inquirer
     .prompt ([
